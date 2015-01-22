@@ -1,0 +1,6 @@
+.idea
+.sass*
+_site
+*.swp
+pkg/
+test/

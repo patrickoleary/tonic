@@ -1,0 +1,46 @@
+- title: Getting Started
+  docs:
+  - home
+  - quickstart
+  - installation
+  - usage
+  - structure
+  - configuration
+
+- title: app
+  docs:
+  - DivApp
+  - StandaloneApp
+  - init
+
+- title: lib
+  docs:
+  - application
+  - model
+  - datamodel
+
+- title: Your Content
+  docs:
+  - collections
+  - datafiles
+  - migrations
+
+- title: Customization
+  docs:
+  - extras
+
+- title: Deployment
+  docs:
+  - deployment-methods
+
+- title: Development
+  docs:
+  - contributing
+  - continuous-integration
+  - troubleshooting
+
+- title: Meta
+  docs:
+  - resources
+  - upgrading
+  - history
