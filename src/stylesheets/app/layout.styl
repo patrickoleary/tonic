@@ -1,0 +1,114 @@
+$baseColor = #333
+$opacityDuration = 0.4s
+$textColor = #666
+$highlightTextColor = #333
+$disabledColor = #aaa
+$disabledHighlightTextColor = #666
+$headerHeight = 40px
+
+
+body
+  color $baseColor
+  font-family sans-serif
+  margin 0
+  padding 0
+  position absolute
+  width 100%
+  min-height 100%
+
+i
+  -webkit-user-select none
+  -moz-user-select none
+  user-select none
+
+a
+  cursor pointer
+
+.t-header-container
+  background-color $baseColor
+  height $headerHeight
+  width 100%
+  position fixed
+  top 0
+  z-index 100
+
+.t-body-container
+  position absolute
+  left 0
+  right 0
+  top 40px
+  bottom 0
+  z-index 0
+
+.t-div-container
+  position absolute
+  border 1px solid
+  left 0
+  right 0
+  top 0
+  bottom 0
+  z-index 0
+
+.t-control-widget-div
+  position absolute
+  border 1px solid
+  left 0
+  right 0
+  top 0
+  bottom 0
+  z-index 10
+
+.t-widget-container-div
+  position absolute
+  border 1px solid
+  left 0
+  right 0
+  top 0
+  bottom 0
+  z-index 10
+
+.t-control-container
+  position fixed
+  top 50px
+  z-index 10
+
+  &.left
+    left 10px
+    width 300px
+
+  &.center
+    left 320px
+    right 320px
+
+  &.right
+    right 10px
+    width 300px
+
+  .t-panel-title
+    display inline-block
+    font-size 15px
+    font-weight bold
+    color $textColor
+
+  .t-panel-toolbar
+    float right
+
+  .t-control-panel
+    border-radius 3px
+    background-color rgba(255, 255, 255, 0.5)
+    transition background-color 0.4s ease-in-out
+    border 1px solid #d3d3d3
+    margin-bottom 10px
+
+    &:hover
+      background-color rgba(255, 255, 255, 0.88)
+
+    .t-control-panel-header
+      padding 6px 10px 6px 7px
+      background-color rgba(210, 210, 210, 1.0)
+
+    .t-control-panel-body
+      padding 6px 9px
+
+    &.closed
+      display none

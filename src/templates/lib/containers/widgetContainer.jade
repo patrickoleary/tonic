@@ -1,0 +1,10 @@
+.t-widget-container-content
+   .t-widget-container-panel.t-widget-container-panel-header
+      .t-widget-container-panel-title
+          | #{widgetTitle}
+         .t-widget-container-panel-tools.pull-right
+            each widget in widgetMap
+                i(class="#{widget.icon} t-widget-container-button", title="#{widget.title}", key="#{widget.id}", state='active')
+            i(class="fa fa-ellipsis-h t-widget-container-close", state='active')
+   each widget in widgetMap
+     .t-widget-container(id="t-#{widget.key}-panel", state='active')

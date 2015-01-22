@@ -1,0 +1,50 @@
+$textColor = #666
+$highlightTextColor = #333
+
+.t-control-widget-content
+  color $textColor
+
+i.t-control-widget-icon
+  width 1em
+  text-align center
+
+label.t-control-widget-label
+  width 1em
+  text-align center
+  font-weight bold
+  margin-right 5px
+  margin-bottom 0px
+
+
+.group
+  display inline
+  position relative
+
+i.t-control-widget-button
+  text-align center
+  cursor pointer
+
+  &:hover
+    color $highlightTextColor
+
+label.t-control-widget-value
+  width 3em
+  text-align center
+  margin-bottom 0px
+
+input.t-control-widget-input
+  display inline
+  width 100px
+  position relative
+  top 2px
+  margin-right 5px
+  margin-left 5px
+  cursor pointer
+  -webkit-border-radius 20px
+  -moz-border-radius 20px
+  border-radius 20px
+
+
+select.t-control-widget-select
+  float right
+  cursor pointer

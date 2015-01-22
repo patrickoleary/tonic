@@ -1,0 +1,21 @@
+.t-control-widget-content
+each controlName in order
+   if controlMap[controlName].values.length > 1
+      .t-control-widget(control_id="#{controlName}")
+         if controlMap[controlName].icon
+            i(class="#{controlMap[controlName].icon} t-control-widget-icon")
+            label.t-control-widget-label &#{controlMap[controlName].iconlabel};
+         else
+            label.t-control-widget-label #{controlMap[controlName].label}
+         if controlMap[controlName].type === 'range'
+            .group
+               i.fa.fa-step-backward.t-control-widget-button(action="first")
+               i.fa.fa-chevron-left.t-control-widget-button(action="previous")
+               input(class="t-control-widget-input", type="range", value="#{controlMap[controlName].activeIndex}", min="0", max="#{controlMap[controlName].values.length -   1}", step="1")
+               i.fa.fa-chevron-right.t-control-widget-button(action="next")
+               i.fa.fa-step-forward.t-control-widget-button(action="last")
+               label.t-control-widget-value #{controlMap[controlName].values[controlMap[controlName].activeIndex]}
+         else
+            select.t-control-widget-select
+            each option in controlMap[controlName].values
+               option. #{option}

@@ -1,0 +1,79 @@
+$textColor = #666
+$highlightTextColor = #333
+$headerColor = #626262
+
+.t-control-widget-content
+  color $textColor
+
+.t-widget-container-panel
+
+.t-widget-container-panel-header
+  color $textColor
+  padding 5px 5px 5px 5px
+  background-color rgba(210, 210, 210, 1.0)
+
+.t-widget-container-panel-header.small
+  color $textColor
+  padding 0px 0px 0px 0px
+  background-color rgba(210, 210, 210, 1.0)
+
+.t-widget-container-panel-title
+  display inline-block
+  font-weight bold
+  line-height 22px
+
+.t-widget-container-panel-title.small
+  display none
+
+.t-widget-container-panel-tools
+  display inline-block
+  margin-right 0px
+
+.t-widget-container-button
+  text-align center
+  border-radius 3px
+  padding-right 5px
+  cursor pointer
+
+  &:hover
+   color $highlightTextColor
+
+.t-widget-container-button.small
+  display none
+
+.t-widget-container-close
+  text-align center
+  border-radius 3px
+  cursor pointer
+
+  &:hover
+    color $highlightTextColor
+
+.t-widget-container-close.small
+  float right
+  top 4px
+  font-size 14px
+  background-color rgba(210, 210, 210, 1.0)
+  text-align center
+  border-radius 8px
+  margin-right 5px
+  margin-top 8px
+  cursor pointer
+
+  &:hover
+    color $highlightTextColor
+
+.t-widget-container
+  display block
+  color $textColor
+  border-radius 3px
+  background-color rgba(255, 255, 255, 0.5)
+  transition background-color 0.4s ease-in-out
+  border 1px solid #d3d3d3
+  padding 10px 10px 10px 5px
+
+  &:hover
+    background-color rgba(255, 255, 255, 0.88)
+
+.t-widget-container.small
+  display none

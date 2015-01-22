@@ -1,0 +1,40 @@
+{
+  "name": "Tonic",
+  "description": "Tonic open-source framework",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "bean": "*",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0",
+    "grunt": "*",
+    "grunt-cli": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-stylus": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-doxx": "*",
+    "grunt-exec": "*",
+    "grunt-extend": "*",
+    "grunt-jsdox": "*",
+    "jade": "~1.8.2",
+    "jasmine-core": "*",
+    "jshint": "~2.5.11",
+    "phantomjs": "~1.9.8",
+    "qwery": "*",
+    "requirejs": "~2.1.15",
+    "reqwest": "*"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/grunt init && ./node_modules/.bin/grunt"
+  },
+  "devDependencies": {
+    "grunt-express": "~1.4.1"
+  }
+}
